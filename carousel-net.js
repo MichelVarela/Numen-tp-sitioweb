@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 5,
