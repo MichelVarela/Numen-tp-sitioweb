@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myApp</title>
+    <script src="https://kit.fontawesome.com/cb06bc0e62.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
+            <div class="container-fluid">
+              <a href="#" class="inicio"><img class="logo" src="/images/logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Perfil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Datos personales</a></li>
+                      <li><a class="dropdown-item" href="#">Mis compras</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Notebooks
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Exo</a></li>
+                      <li><a class="dropdown-item" href="#">Hp</a></li>
+                      <li><a class="dropdown-item" href="#">Asus</a></li>
+                      <li><a class="dropdown-item" href="#">Dell</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre nosotros</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light search" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="banner">
+        <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/banners/banner01.jpg" class="d-block w-100" alt="Notebook">
+                <div class="carousel-caption text-light">
+                  <h5>First slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita soluta placeat sed magni? Nesciunt quibusdam ab facilis eaque quasi tempore impedit esse natus assumenda.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/banners/banner02.jpg" class="d-block w-100" alt="Notebook">
+                <div class="carousel-caption text-light">
+                  <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita soluta placeat sed magni? Nesciunt quibusdam ab facilis eaque quasi tempore impedit esse natus assumenda.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banners/banner03.jpg" class="d-block w-100" alt="Notebook">
+                <div class="carousel-caption text-light">
+                  <h5>Third slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita soluta placeat sed magni? Nesciunt quibusdam ab facilis eaque quasi tempore impedit esse natus assumenda.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    
+    <main>
+
+      <!-- carousel de marcas -->
+      <div class="glider-contain">
+        <div class="glider">
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/asus.png" alt="logo asus"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/exo.png" alt="logo exo"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/hp.png" alt="logo hp"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/dell.png" alt="logo dell"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/asus.png" alt="logo asus"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/exo.png" alt="logo exo"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/hp.png" alt="logo hp"></a>
+          </div>
+          <div class="carousel-logo">
+            <a href="#"><img src="/images/categorys/dell.png" alt="logo dell"></a>
+          </div>
+        </div>
+      
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+      <!-- carousel de marcas -->
+
+      <section class="posts">
+        <article class="post-01">
+          <img src="/images/posts/post01.jpg" alt="post 01">
+          <div class="content-post">
+            <h2>¿ Porque elegirnos ?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illum, voluptatibus, odio, accusantium dolores nisi vel in id cupiditate dolor quia beatae magnam a nemo nulla molestias officia nam ipsa! Optio, aliquam laudantium odio mollitia deleniti quia illum nam magni nostrum. Deleniti ad est fugiat reprehenderit odit officiis, accusantium tempore.</p>
+          </div>
+        </article>
+        <hr>
+        <article class="post-02">
+          <img src="/images/posts/post02.jpg" alt="post 02">
+          <div class="content-post">
+            <h2>Seguridad & Confianza</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illum, voluptatibus, odio, accusantium dolores nisi vel in id cupiditate dolor quia beatae magnam a nemo nulla molestias officia nam ipsa! Optio, aliquam laudantium odio mollitia deleniti quia illum nam magni nostrum. Deleniti ad est fugiat reprehenderit odit officiis, accusantium tempore.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- carousel de notebooks -->
+      
+      <h2 class="title-recomendadas">Nuestras recomendadas</h2>
+
+      <div class="glider-contain">
+        <div class="glider-net">
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product01.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product02.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product01.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product02.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product01.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product02.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product01.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+          <div class="carousel-net">
+            <a href="#"><img src="/images/products/product02.jpg" alt=""></a>
+            <hr>
+            <div class="content-product">
+              <h2>$300</h2>
+              <h4>Netbook xxx-xxx</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ab.</p>
+            </div>
+          </div>
+        </div>
+      
+        <button aria-label="Previous" class="glider-prev-net">«</button>
+        <button aria-label="Next" class="glider-next-net">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+      <!-- carousel de notebooks -->
+
+    </main>
+    
+    <footer>
+      <img src="/images/logo.png" alt="">
+      <h4>Netbook JS</h4>
+      <h6>netbookJS.96@outlook.com</h6>
+      <p><b>Contacto: </b> xx - xxxx - xxxx</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="carousel.js"></script>
+    <script src="carousel-net.js"></script>
+</body>
+</html>
