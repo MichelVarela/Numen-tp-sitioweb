@@ -23,7 +23,7 @@ window.addEventListener('load', function(){
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 990,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
